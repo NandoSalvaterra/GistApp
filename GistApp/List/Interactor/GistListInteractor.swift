@@ -14,4 +14,14 @@ class GistListInteractor: GistListInteractorInput {
     init(output: GistListInteractorOutput) {
         self.output = output
     }
+
+    func fetchGists() {
+        GistAPI.shared.getPublicGists { (gists, errorMessage) in
+            if let gistList = gists {
+                self.output?.gistsDidLoad(gistList)
+            } else {
+                self.output?.onErrorLoadingGists(message: errorMessage ?? "error_default".localized)
+            }
+        }
+    }
 }

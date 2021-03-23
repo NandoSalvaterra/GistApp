@@ -18,9 +18,31 @@ class GistListPresenter: GistListPresentation {
         self.interactor = GistListInteractor(output: self)
         self.router = GistListRouter(viewController: viewController)
     }
+
+    func getGists() {
+        view?.showLoadingView()
+        interactor.fetchGists()
+    }
+
+    func showGistDetailView(_ gist: Gist) {
+        router.openGistDetailView(gist)
+    }
+
+    func showCameraView() {
+        router.openCameraView()
+    }
 }
 
 // MARK: - GistListInteractorOutput
 extension GistListPresenter: GistListInteractorOutput {
 
+    func gistsDidLoad(_ gists: [Gist]) {
+        view?.hideLoadingView()
+        view?.showGists(gists)
+    }
+
+    func onErrorLoadingGists(message: String) {
+        view?.hideLoadingView()
+        view?.showErrorView(message: message)
+    }
 }

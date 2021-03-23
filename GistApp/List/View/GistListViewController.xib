@@ -24,6 +24,7 @@
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fi7-PZ-VYF">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="Poa-Ys-q7c"/>
                         <outlet property="delegate" destination="-1" id="wO3-ts-KeM"/>
@@ -39,6 +40,8 @@
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="12" maxY="0.0"/>
                     <state key="normal" title="Scanear QRCode" image="icon_plus"/>
+                    <state key="selected" image="icon_plus"/>
+                    <state key="highlighted" image="icon_plus"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                             <integer key="value" value="24"/>

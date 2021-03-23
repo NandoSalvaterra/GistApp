@@ -14,4 +14,13 @@ class GistListRouter: GistListWireframe {
     init(viewController: GistListViewController) {
         self.viewController = viewController
     }
+
+    func openGistDetailView(_ gist: Gist) {
+
+    }
+
+    func openCameraView() {
+        let cameraViewController = CameraViewController()
+        viewController?.present(cameraViewController, animated: true, completion: nil)
+    }
 }

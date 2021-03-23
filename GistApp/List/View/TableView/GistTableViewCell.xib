@@ -45,7 +45,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.070588235294117646" green="0.69803921568627447" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.92941176470588238" green="0.92156862745098034" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="38" id="7sL-jy-gKO"/>
                             <constraint firstAttribute="height" constant="24" id="C6M-wL-lNQ"/>
@@ -82,7 +82,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="gist description here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APR-n2-NbT" userLabel="Description Label">
-                        <rect key="frame" x="16" y="50" width="124.5" height="16"/>
+                        <rect key="frame" x="16" y="50" width="274" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" red="0.22352941176470587" green="0.20784313725490194" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -102,6 +102,7 @@
                     <constraint firstItem="APR-n2-NbT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="8BR-68-ro6"/>
                     <constraint firstItem="nqD-p4-TTN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="H29-Lc-FEN"/>
                     <constraint firstItem="1QO-Z8-wdQ" firstAttribute="centerY" secondItem="ADf-Sd-hwT" secondAttribute="centerY" id="MKQ-WG-4re"/>
+                    <constraint firstItem="nqD-p4-TTN" firstAttribute="leading" secondItem="APR-n2-NbT" secondAttribute="trailing" constant="16" id="OjD-WF-gnK"/>
                     <constraint firstItem="abN-rx-itW" firstAttribute="top" secondItem="ADf-Sd-hwT" secondAttribute="bottom" constant="8" id="Wbq-CC-Cau"/>
                     <constraint firstItem="1QO-Z8-wdQ" firstAttribute="leading" secondItem="ADf-Sd-hwT" secondAttribute="trailing" constant="8" id="WtD-Pe-BlI"/>
                     <constraint firstItem="AvF-Nt-M4z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="fWe-j0-3S0"/>

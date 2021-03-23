@@ -24,27 +24,29 @@ protocol GistListPresentation: class {
     var interactor: GistListInteractorInput! { get set }
     var router: GistListWireframe! { get set }
 
-//    func getReferencePoints()
-//    func showReferencePointDetailView(_ referencePoint: ReferencePoint)
-//    func showSelectAddressView(viewMode: SelectAddressViewMode)
+    func getGists()
+    func showGistDetailView(_ gist: Gist)
+    func showCameraView()
 }
 
 protocol GistListInteractorInput: class {
 
     var output: GistListInteractorOutput? { get set }
 
+    func fetchGists()
+
 }
 
 protocol GistListInteractorOutput: class {
 
-//    func referencePointsDidLoad(_ referencePoints: [ReferencePoint])
-//    func onErrorLoadingReferencePoints(message: String)
+    func gistsDidLoad(_ gists: [Gist])
+    func onErrorLoadingGists(message: String)
 }
 
 protocol GistListWireframe: class {
 
     var viewController: GistListViewController? { get set }
 
-//    func openReferencePointDetailView(_ referencePoint: ReferencePoint)
-//    func openSelectAddressView(viewMode: SelectAddressViewMode)
+    func openGistDetailView(_ gist: Gist)
+    func openCameraView()
 }
