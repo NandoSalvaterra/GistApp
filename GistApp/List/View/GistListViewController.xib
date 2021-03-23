@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GistListViewController" customModule="GistApp" customModuleProvider="target">
+            <connections>
+                <outlet property="scanButton" destination="hXk-Mr-Vee" id="EIb-be-BpX"/>
+                <outlet property="tableView" destination="Fi7-PZ-VYF" id="Sj7-GL-XF5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fi7-PZ-VYF">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Poa-Ys-q7c"/>
+                        <outlet property="delegate" destination="-1" id="wO3-ts-KeM"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXk-Mr-Vee" userLabel="Scan  Button" customClass="UIRoundedButton" customModule="GistApp" customModuleProvider="target">
+                    <rect key="frame" x="87" y="798" width="240" height="48"/>
+                    <color key="backgroundColor" name="AccentColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="fkV-cy-bed"/>
+                        <constraint firstAttribute="width" constant="240" id="qin-Sf-BqE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="12" maxY="0.0"/>
+                    <state key="normal" title="Scanear QRCode" image="icon_plus"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="scanButtonPressed:" destination="-1" eventType="touchUpInside" id="yzW-fK-GhV"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="hXk-Mr-Vee" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0DM-Jx-UNu"/>
+                <constraint firstItem="Fi7-PZ-VYF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="KbG-rX-BZt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Fi7-PZ-VYF" secondAttribute="bottom" id="Noy-iG-dLn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Fi7-PZ-VYF" secondAttribute="trailing" id="VzI-yU-kp2"/>
+                <constraint firstItem="Fi7-PZ-VYF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gCe-cD-acF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="hXk-Mr-Vee" secondAttribute="bottom" constant="16" id="hKY-nx-xYP"/>
+            </constraints>
+            <point key="canvasLocation" x="32" y="75"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="hXk-Mr-Vee">
+            <size key="intrinsicContentSize" width="177" height="24"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="icon_plus" width="24" height="24"/>
+        <namedColor name="AccentColor">
+            <color red="0.875" green="0.32499998807907104" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

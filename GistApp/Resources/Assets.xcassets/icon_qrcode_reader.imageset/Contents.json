@@ -1,6 +1,7 @@
 {
-  "colors" : [
+  "images" : [
     {
+      "filename" : "icon_qrcode_reader.png",
       "idiom" : "universal"
     }
   ],

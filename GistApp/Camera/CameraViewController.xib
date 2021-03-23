@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CameraViewController" customModule="GistApp" customModuleProvider="target">
+            <connections>
+                <outlet property="cameraView" destination="6Mm-QT-peh" id="hHN-35-oVh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Mm-QT-peh" userLabel="Camera View">
+                    <rect key="frame" x="0.0" y="60" width="375" height="507"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_qrcode_reader" translatesAutoresizingMaskIntoConstraints="NO" id="FbC-t9-E9N">
+                    <rect key="frame" x="64" y="77.5" width="247" height="512"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escaneie o QRCode para comentar " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1x-Vf-0YO">
+                    <rect key="frame" x="69" y="24" width="237" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="FbC-t9-E9N" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5RD-Ja-dh1"/>
+                <constraint firstItem="F1x-Vf-0YO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="5bk-M6-vOI"/>
+                <constraint firstItem="6Mm-QT-peh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Fcx-z2-SsZ"/>
+                <constraint firstItem="FbC-t9-E9N" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="PJt-Wq-wGN"/>
+                <constraint firstItem="6Mm-QT-peh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="RCE-Zz-btC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="6Mm-QT-peh" secondAttribute="bottom" constant="100" id="hKX-xR-39p"/>
+                <constraint firstAttribute="trailing" secondItem="FbC-t9-E9N" secondAttribute="trailing" constant="64" id="mA0-AH-E4l"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6Mm-QT-peh" secondAttribute="trailing" id="sSI-ca-nXT"/>
+                <constraint firstItem="F1x-Vf-0YO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yWe-ha-wdA"/>
+            </constraints>
+            <point key="canvasLocation" x="-42.028985507246382" y="39.508928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_qrcode_reader" width="512" height="512"/>
+    </resources>
+</document>
