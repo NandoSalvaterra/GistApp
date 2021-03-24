@@ -15,12 +15,15 @@ class GistListRouter: GistListWireframe {
         self.viewController = viewController
     }
 
-    func openGistDetailView(_ gist: Gist) {
-
+    func openGistDetailView(_ gistId: String) {
+        let gistDetailViewController = GistDetailViewController()
+        gistDetailViewController.gistId = gistId
+        viewController?.navigationController?.pushViewController(gistDetailViewController, animated: true)
     }
 
     func openCameraView() {
         let cameraViewController = CameraViewController()
+        cameraViewController.delegate = viewController
         viewController?.present(cameraViewController, animated: true, completion: nil)
     }
 }

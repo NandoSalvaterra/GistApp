@@ -25,7 +25,7 @@ protocol GistListPresentation: class {
     var router: GistListWireframe! { get set }
 
     func getGists()
-    func showGistDetailView(_ gist: Gist)
+    func showGistDetailView(_ gistId: String)
     func showCameraView()
 }
 
@@ -47,6 +47,6 @@ protocol GistListWireframe: class {
 
     var viewController: GistListViewController? { get set }
 
-    func openGistDetailView(_ gist: Gist)
+    func openGistDetailView(_ gistId: String)
     func openCameraView()
 }

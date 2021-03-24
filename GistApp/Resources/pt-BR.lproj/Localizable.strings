@@ -6,5 +6,16 @@
 */
 
 // MARK: - General
+"gists" = "Gists";
+"comments" = "comentários";
+"no_description" = "Gist sem descrição";
 "invalid_url" = "URL inválida";
 "invalid_data" = "Dados inválidos";
+"last_update_at" = "Atualizado há";
+"last_update_now" = "Atualizado agora mesmo";
+"last_update_yesterday" = "Atualizado ontem";
+"last_update_date_at" = "às";
+"last_update_date_of" = "de";
+"hour_abbreviation" = "hr";
+"minute_abbreviation" = "min";
+"camera_title" = "Scanei um QRCode Gist";

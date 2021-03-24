@@ -11,8 +11,8 @@ class GistListViewController: UIViewController {
 
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var scanButton: UIRoundedButton!
-
     private var refreshControl: UIRefreshControl!
+    private lazy var loadingView = LoadingView(frame: view.frame)
 
     private var gists: [Gist] = []
 
@@ -38,6 +38,8 @@ class GistListViewController: UIViewController {
     // MARK: - Private API
 
     private func setupView() {
+        title = "gists".localized
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         tableView.register(UINib(nibName: "GistTableViewCell", bundle: nil), forCellReuseIdentifier: "gistTableViewCell")
         tableView.tableFooterView = UIView()
         refreshControl = UIRefreshControl()
@@ -52,10 +54,12 @@ extension GistListViewController: GistListView {
 
     func showLoadingView() {
         if refreshControl.isRefreshing { return }
+        view.addSubview(loadingView)
     }
 
     func hideLoadingView() {
         refreshControl.endRefreshing()
+        loadingView.removeFromSuperview()
     }
 
     func showGists(_ gists: [Gist]) {
@@ -83,5 +87,17 @@ extension GistListViewController: UITableViewDataSource, UITableViewDelegate {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "gistTableViewCell", for: indexPath) as? GistTableViewCell else { return UITableViewCell() }
         cell.bind(gist: gists[indexPath.row])
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter.showGistDetailView(gists[indexPath.row].id ?? "")
+    }
+}
+
+// MARK: - CameraDelegate
+extension GistListViewController: CameraDelegate {
+
+    func qrCodeDidRead(_ gistId: String) {
+        presenter.showGistDetailView(gistId)
     }
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Gist: Codable {
+class Gist: Decodable {
 
     var id: String?
     var nodeId: String?
@@ -19,13 +19,13 @@ class Gist: Codable {
     var pushURL: String?
     var htmlURL: String?
     var commentsURL: String?
-//    var created: Date?
-//    var updated: Date?
-//    var files: Any? // TODO: change here
-//    var user: Any? // TODO: change here
-    var owner: Owner? // TODO: change here
-//    var forks: [Any]? // TODO: change here
-//    var history: [Any]? // TODO: change here
+    var created: Date?
+    var updated: Date?
+   // var files: [String: Any]?
+    //    var user: Any? // TODO: change here
+    var owner: User? // TODO: change here
+   // var forks: [String]?
+    var history: History? // TODO: change here
     var isPublic: Bool?
     var isTruncated: Bool?
     var commentCount: Int?
@@ -41,15 +41,14 @@ class Gist: Codable {
         case pushURL = "git_push_url"
         case htmlURL = "html_url"
         case commentsURL = "comments_url"
-//        case created = "created_at"
-//        case updated = "updated_at"
-//        case files = "files"
-//        case user = "user"
+        case created = "created_at"
+        case updated = "updated_at"
+        //case files = "files"
         case owner = "owner"
-//        case forks = "forks"
-//        case history = "history"
+       // case forks = "forks"
+        case history = "history"
         case isPublic = "public"
         case isTruncated = "truncated"
-        case commentCount = "commentCount"
+        case commentCount = "comments"
     }
 }

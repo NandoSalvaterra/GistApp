@@ -24,8 +24,8 @@ class GistListPresenter: GistListPresentation {
         interactor.fetchGists()
     }
 
-    func showGistDetailView(_ gist: Gist) {
-        router.openGistDetailView(gist)
+    func showGistDetailView(_ gistId: String) {
+        router.openGistDetailView(gistId)
     }
 
     func showCameraView() {

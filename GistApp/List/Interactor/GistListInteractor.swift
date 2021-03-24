@@ -16,7 +16,7 @@ class GistListInteractor: GistListInteractorInput {
     }
 
     func fetchGists() {
-        GistAPI.shared.getPublicGists { (gists, errorMessage) in
+        GistAPI.shared.getGists { (gists, errorMessage) in
             if let gistList = gists {
                 self.output?.gistsDidLoad(gistList)
             } else {

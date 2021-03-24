@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BA56391260A6838003FE5B8 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA56390260A6838003FE5B8 /* DateExtension.swift */; };
+		5BA56394260A9B70003FE5B8 /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA56393260A9B6F003FE5B8 /* DateFormatterExtension.swift */; };
+		5BA56398260A9BC1003FE5B8 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA56397260A9BC1003FE5B8 /* Comment.swift */; };
+		5BA563A0260AA1A0003FE5B8 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA5639E260AA1A0003FE5B8 /* CommentTableViewCell.swift */; };
+		5BA563A1260AA1A0003FE5B8 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BA5639F260AA1A0003FE5B8 /* CommentTableViewCell.xib */; };
+		5BA563A5260AB3DA003FE5B8 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA563A4260AB3DA003FE5B8 /* History.swift */; };
+		5BA563A9260AB825003FE5B8 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BA563A8260AB825003FE5B8 /* LoadingView.xib */; };
+		5BA563AC260AB838003FE5B8 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA563AB260AB838003FE5B8 /* LoadingView.swift */; };
 		5BEF99AC26093E39002F4E5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEF99AB26093E39002F4E5D /* AppDelegate.swift */; };
 		5BEF99B526093E40002F4E5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BEF99B426093E40002F4E5D /* Assets.xcassets */; };
 		5BEF99B826093E40002F4E5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BEF99B626093E40002F4E5D /* LaunchScreen.storyboard */; };
@@ -26,7 +34,7 @@
 		5BEF9ACA260979A4002F4E5D /* GistListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEF9AC9260979A4002F4E5D /* GistListRouter.swift */; };
 		5BEF9ACD260979B0002F4E5D /* GistListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEF9ACC260979B0002F4E5D /* GistListContract.swift */; };
 		5BEF9D88260A3F09002F4E5D /* GistTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BEF9D87260A3F09002F4E5D /* GistTableViewCell.xib */; };
-		5BEF9D8B260A4774002F4E5D /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEF9D8A260A4774002F4E5D /* Owner.swift */; };
+		5BEF9D8B260A4774002F4E5D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEF9D8A260A4774002F4E5D /* User.swift */; };
 		5BEF9D8E260A496D002F4E5D /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEF9D8D260A496D002F4E5D /* UIImageViewExtension.swift */; };
 		5BEF9D97260A4B91002F4E5D /* GistDetailContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEF9D96260A4B91002F4E5D /* GistDetailContract.swift */; };
 		5BEF9D9A260A4B99002F4E5D /* GistDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEF9D99260A4B99002F4E5D /* GistDetailRouter.swift */; };
@@ -37,6 +45,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5BA56390260A6838003FE5B8 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		5BA56393260A9B6F003FE5B8 /* DateFormatterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtension.swift; sourceTree = "<group>"; };
+		5BA56397260A9BC1003FE5B8 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		5BA5639E260AA1A0003FE5B8 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		5BA5639F260AA1A0003FE5B8 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		5BA563A4260AB3DA003FE5B8 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		5BA563A8260AB825003FE5B8 /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		5BA563AB260AB838003FE5B8 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		5BEF99A826093E39002F4E5D /* GistApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GistApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BEF99AB26093E39002F4E5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BEF99B426093E40002F4E5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,7 +76,7 @@
 		5BEF9AC9260979A4002F4E5D /* GistListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistListRouter.swift; sourceTree = "<group>"; };
 		5BEF9ACC260979B0002F4E5D /* GistListContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistListContract.swift; sourceTree = "<group>"; };
 		5BEF9D87260A3F09002F4E5D /* GistTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GistTableViewCell.xib; sourceTree = "<group>"; };
-		5BEF9D8A260A4774002F4E5D /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		5BEF9D8A260A4774002F4E5D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5BEF9D8D260A496D002F4E5D /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		5BEF9D96260A4B91002F4E5D /* GistDetailContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistDetailContract.swift; sourceTree = "<group>"; };
 		5BEF9D99260A4B99002F4E5D /* GistDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistDetailRouter.swift; sourceTree = "<group>"; };
@@ -81,6 +97,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BA5639D260AA185003FE5B8 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				5BA5639E260AA1A0003FE5B8 /* CommentTableViewCell.swift */,
+				5BA5639F260AA1A0003FE5B8 /* CommentTableViewCell.xib */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		5BA563A7260AB80C003FE5B8 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				5BA563A8260AB825003FE5B8 /* LoadingView.xib */,
+				5BA563AB260AB838003FE5B8 /* LoadingView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
 		5BEF999F26093E39002F4E5D = {
 			isa = PBXGroup;
 			children = (
@@ -106,7 +140,8 @@
 				5BEF99C726094DE0002F4E5D /* Camera */,
 				5BEF9AAA260972E4002F4E5D /* List */,
 				5BEF9D90260A4B60002F4E5D /* Detail */,
-				5BEF9AA62609715D002F4E5D /* Util */,
+				5BA563A7260AB80C003FE5B8 /* CustomView */,
+				5BEF9AA62609715D002F4E5D /* Extensions */,
 				5BEF9A9A260970AB002F4E5D /* Resources */,
 			);
 			path = GistApp;
@@ -133,7 +168,9 @@
 			isa = PBXGroup;
 			children = (
 				5BEF9A94260967B1002F4E5D /* Gist.swift */,
-				5BEF9D8A260A4774002F4E5D /* Owner.swift */,
+				5BEF9D8A260A4774002F4E5D /* User.swift */,
+				5BA56397260A9BC1003FE5B8 /* Comment.swift */,
+				5BA563A4260AB3DA003FE5B8 /* History.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -149,15 +186,17 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		5BEF9AA62609715D002F4E5D /* Util */ = {
+		5BEF9AA62609715D002F4E5D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				5BEF9AA72609716A002F4E5D /* StringExtension.swift */,
 				5BEF9ABC26097736002F4E5D /* UIRoundedButton.swift */,
 				5BEF9ABF26097774002F4E5D /* UIViewExtension.swift */,
 				5BEF9D8D260A496D002F4E5D /* UIImageViewExtension.swift */,
+				5BA56390260A6838003FE5B8 /* DateExtension.swift */,
+				5BA56393260A9B6F003FE5B8 /* DateFormatterExtension.swift */,
 			);
-			path = Util;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		5BEF9AAA260972E4002F4E5D /* List */ = {
@@ -272,6 +311,7 @@
 			children = (
 				5BEF9DA2260A4BC3002F4E5D /* GistDetailViewController.swift */,
 				5BEF9DA3260A4BC3002F4E5D /* GistDetailViewController.xib */,
+				5BA5639D260AA185003FE5B8 /* TableView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -340,7 +380,9 @@
 				5BEF9D88260A3F09002F4E5D /* GistTableViewCell.xib in Resources */,
 				5BEF9AAE260972F8002F4E5D /* GistListViewController.xib in Resources */,
 				5BEF9DA5260A4BC3002F4E5D /* GistDetailViewController.xib in Resources */,
+				5BA563A9260AB825003FE5B8 /* LoadingView.xib in Resources */,
 				5BEF99B526093E40002F4E5D /* Assets.xcassets in Resources */,
+				5BA563A1260AA1A0003FE5B8 /* CommentTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,12 +394,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BEF9DA4260A4BC3002F4E5D /* GistDetailViewController.swift in Sources */,
+				5BA56398260A9BC1003FE5B8 /* Comment.swift in Sources */,
+				5BA56391260A6838003FE5B8 /* DateExtension.swift in Sources */,
+				5BA56394260A9B70003FE5B8 /* DateFormatterExtension.swift in Sources */,
 				5BEF9AC026097774002F4E5D /* UIViewExtension.swift in Sources */,
 				5BEF9AC72609799C002F4E5D /* GistListPresenter.swift in Sources */,
 				5BEF9ACA260979A4002F4E5D /* GistListRouter.swift in Sources */,
 				5BEF9A9026096142002F4E5D /* GistAPI.swift in Sources */,
 				5BEF9ABD26097736002F4E5D /* UIRoundedButton.swift in Sources */,
+				5BA563A5260AB3DA003FE5B8 /* History.swift in Sources */,
 				5BEF9AAD260972F8002F4E5D /* GistListViewController.swift in Sources */,
+				5BA563AC260AB838003FE5B8 /* LoadingView.swift in Sources */,
 				5BEF9D9A260A4B99002F4E5D /* GistDetailRouter.swift in Sources */,
 				5BEF9AC426097993002F4E5D /* GistListInteractor.swift in Sources */,
 				5BEF9A95260967B1002F4E5D /* Gist.swift in Sources */,
@@ -367,8 +414,9 @@
 				5BEF9D9D260A4BA5002F4E5D /* GistDetailPresenter.swift in Sources */,
 				5BEF9A6D26094E13002F4E5D /* CameraViewController.swift in Sources */,
 				5BEF9DA0260A4BB0002F4E5D /* GistDetailInteractor.swift in Sources */,
+				5BA563A0260AA1A0003FE5B8 /* CommentTableViewCell.swift in Sources */,
 				5BEF9ACD260979B0002F4E5D /* GistListContract.swift in Sources */,
-				5BEF9D8B260A4774002F4E5D /* Owner.swift in Sources */,
+				5BEF9D8B260A4774002F4E5D /* User.swift in Sources */,
 				5BEF9D8E260A496D002F4E5D /* UIImageViewExtension.swift in Sources */,
 				5BEF99AC26093E39002F4E5D /* AppDelegate.swift in Sources */,
 			);

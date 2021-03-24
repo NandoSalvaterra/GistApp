@@ -59,10 +59,10 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1QO-Z8-wdQ" userLabel="Comment View">
-                        <rect key="frame" x="62" y="82" width="110" height="24"/>
+                        <rect key="frame" x="62" y="82" width="120" height="24"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="38 comentários" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3x-P3-Euz">
-                                <rect key="frame" x="5.5" y="4" width="99.5" height="16"/>
+                                <rect key="frame" x="10.5" y="4" width="99.5" height="16"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                 <color key="textColor" red="0.070588235294117646" green="0.69803921568627447" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -70,7 +70,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.60392156862745094" green="0.58431372549019611" blue="0.69803921568627447" alpha="0.20430787852112675" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="110" id="We0-E5-2Ig"/>
+                            <constraint firstAttribute="width" constant="120" id="We0-E5-2Ig"/>
                             <constraint firstAttribute="height" constant="24" id="Wxa-Ap-V0I"/>
                             <constraint firstItem="z3x-P3-Euz" firstAttribute="centerX" secondItem="1QO-Z8-wdQ" secondAttribute="centerX" id="Yz8-UA-h6G"/>
                             <constraint firstItem="z3x-P3-Euz" firstAttribute="centerY" secondItem="1QO-Z8-wdQ" secondAttribute="centerY" id="x3A-8H-wNs"/>
@@ -86,9 +86,6 @@
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" red="0.22352941176470587" green="0.20784313725490194" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
-                        </userDefinedRuntimeAttributes>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Atualizado a 1 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abN-rx-itW">
                         <rect key="frame" x="16" y="114" width="95" height="14"/>
