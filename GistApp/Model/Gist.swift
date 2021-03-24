@@ -22,7 +22,6 @@ class Gist: Decodable {
     var created: Date?
     var updated: Date?
     var owner: User?
-    var history: History?
     var isPublic: Bool?
     var isTruncated: Bool?
     var commentCount: Int?
@@ -41,7 +40,6 @@ class Gist: Decodable {
         case created = "created_at"
         case updated = "updated_at"
         case owner = "owner"
-        case history = "history"
         case isPublic = "public"
         case isTruncated = "truncated"
         case commentCount = "comments"

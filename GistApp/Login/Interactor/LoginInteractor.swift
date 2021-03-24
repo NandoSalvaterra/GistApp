@@ -17,7 +17,8 @@ class LoginInteractor: LoginInteractorInput {
 
     func login(userName: String) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
-            self.output?.userDidLogin(token: "01001ed6e98ba8ad6d80bb312fa02f763facdbb3") //TODO: put your token here
+            self.output?.userDidLogin(token: "")
+            //TODO: put your token here, generate a developer token here: https://github.com/settings/tokens
         }
     }
 }
