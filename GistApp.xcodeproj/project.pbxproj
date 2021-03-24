@@ -12,7 +12,6 @@
 		5BA56398260A9BC1003FE5B8 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA56397260A9BC1003FE5B8 /* Comment.swift */; };
 		5BA563A0260AA1A0003FE5B8 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA5639E260AA1A0003FE5B8 /* CommentTableViewCell.swift */; };
 		5BA563A1260AA1A0003FE5B8 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BA5639F260AA1A0003FE5B8 /* CommentTableViewCell.xib */; };
-		5BA563A5260AB3DA003FE5B8 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA563A4260AB3DA003FE5B8 /* History.swift */; };
 		5BA563A9260AB825003FE5B8 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BA563A8260AB825003FE5B8 /* LoadingView.xib */; };
 		5BA563AC260AB838003FE5B8 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA563AB260AB838003FE5B8 /* LoadingView.swift */; };
 		5BA563B6260AC2EA003FE5B8 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA563B4260AC2EA003FE5B8 /* CommentViewController.swift */; };
@@ -21,8 +20,8 @@
 		5BA563BE260AC302003FE5B8 /* CommentRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA563BD260AC302003FE5B8 /* CommentRouter.swift */; };
 		5BA563C1260AC30A003FE5B8 /* CommentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA563C0260AC30A003FE5B8 /* CommentPresenter.swift */; };
 		5BA563C4260AC313003FE5B8 /* CommentInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA563C3260AC313003FE5B8 /* CommentInteractor.swift */; };
-		5BDE3C39260B99B000248162 /* CommentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE3C37260B99B000248162 /* CommentButton.swift */; };
-		5BDE3C3A260B99B000248162 /* CommentButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BDE3C38260B99B000248162 /* CommentButton.xib */; };
+		5BDE3C39260B99B000248162 /* AccessoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE3C37260B99B000248162 /* AccessoryButton.swift */; };
+		5BDE3C3A260B99B000248162 /* AccessoryButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BDE3C38260B99B000248162 /* AccessoryButton.xib */; };
 		5BDE3C40260B9A8200248162 /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE3C3F260B9A8200248162 /* LoadingButton.swift */; };
 		5BEF99AC26093E39002F4E5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEF99AB26093E39002F4E5D /* AppDelegate.swift */; };
 		5BEF99B526093E40002F4E5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BEF99B426093E40002F4E5D /* Assets.xcassets */; };
@@ -51,6 +50,13 @@
 		5BEF9DA0260A4BB0002F4E5D /* GistDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEF9D9F260A4BB0002F4E5D /* GistDetailInteractor.swift */; };
 		5BEF9DA4260A4BC3002F4E5D /* GistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEF9DA2260A4BC3002F4E5D /* GistDetailViewController.swift */; };
 		5BEF9DA5260A4BC3002F4E5D /* GistDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BEF9DA3260A4BC3002F4E5D /* GistDetailViewController.xib */; };
+		5BFCDCC7260BB9DB00E376D3 /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFCDCC6260BB9DB00E376D3 /* LoginContract.swift */; };
+		5BFCDCCC260BBA5B00E376D3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFCDCCA260BBA5B00E376D3 /* LoginViewController.swift */; };
+		5BFCDCCD260BBA5B00E376D3 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BFCDCCB260BBA5B00E376D3 /* LoginViewController.xib */; };
+		5BFCDCD0260BBB0900E376D3 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFCDCCF260BBB0900E376D3 /* LoginInteractor.swift */; };
+		5BFCDCD3260BBB1300E376D3 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFCDCD2260BBB1300E376D3 /* LoginPresenter.swift */; };
+		5BFCDCD6260BBB1B00E376D3 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFCDCD5260BBB1B00E376D3 /* LoginRouter.swift */; };
+		5BFCDD8F260BCA1200E376D3 /* UIAcessoryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFCDD8E260BCA1200E376D3 /* UIAcessoryTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,7 +65,6 @@
 		5BA56397260A9BC1003FE5B8 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		5BA5639E260AA1A0003FE5B8 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		5BA5639F260AA1A0003FE5B8 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
-		5BA563A4260AB3DA003FE5B8 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		5BA563A8260AB825003FE5B8 /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
 		5BA563AB260AB838003FE5B8 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		5BA563B4260AC2EA003FE5B8 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
@@ -68,8 +73,8 @@
 		5BA563BD260AC302003FE5B8 /* CommentRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRouter.swift; sourceTree = "<group>"; };
 		5BA563C0260AC30A003FE5B8 /* CommentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentPresenter.swift; sourceTree = "<group>"; };
 		5BA563C3260AC313003FE5B8 /* CommentInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentInteractor.swift; sourceTree = "<group>"; };
-		5BDE3C37260B99B000248162 /* CommentButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentButton.swift; sourceTree = "<group>"; };
-		5BDE3C38260B99B000248162 /* CommentButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentButton.xib; sourceTree = "<group>"; };
+		5BDE3C37260B99B000248162 /* AccessoryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessoryButton.swift; sourceTree = "<group>"; };
+		5BDE3C38260B99B000248162 /* AccessoryButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccessoryButton.xib; sourceTree = "<group>"; };
 		5BDE3C3F260B9A8200248162 /* LoadingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
 		5BEF99A826093E39002F4E5D /* GistApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GistApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BEF99AB26093E39002F4E5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +107,13 @@
 		5BEF9D9F260A4BB0002F4E5D /* GistDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistDetailInteractor.swift; sourceTree = "<group>"; };
 		5BEF9DA2260A4BC3002F4E5D /* GistDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistDetailViewController.swift; sourceTree = "<group>"; };
 		5BEF9DA3260A4BC3002F4E5D /* GistDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GistDetailViewController.xib; sourceTree = "<group>"; };
+		5BFCDCC6260BB9DB00E376D3 /* LoginContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
+		5BFCDCCA260BBA5B00E376D3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5BFCDCCB260BBA5B00E376D3 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		5BFCDCCF260BBB0900E376D3 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		5BFCDCD2260BBB1300E376D3 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		5BFCDCD5260BBB1B00E376D3 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		5BFCDD8E260BCA1200E376D3 /* UIAcessoryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAcessoryTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,8 +139,9 @@
 		5BA563A7260AB80C003FE5B8 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
-				5BDE3C3D260B99B800248162 /* CommentButton */,
+				5BDE3C3D260B99B800248162 /* AccessoryButton */,
 				5BDE3C3C260B99B300248162 /* LoadingView */,
+				5BFCDD8E260BCA1200E376D3 /* UIAcessoryTextField.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -195,14 +208,14 @@
 			path = LoadingView;
 			sourceTree = "<group>";
 		};
-		5BDE3C3D260B99B800248162 /* CommentButton */ = {
+		5BDE3C3D260B99B800248162 /* AccessoryButton */ = {
 			isa = PBXGroup;
 			children = (
 				5BDE3C3F260B9A8200248162 /* LoadingButton.swift */,
-				5BDE3C37260B99B000248162 /* CommentButton.swift */,
-				5BDE3C38260B99B000248162 /* CommentButton.xib */,
+				5BDE3C37260B99B000248162 /* AccessoryButton.swift */,
+				5BDE3C38260B99B000248162 /* AccessoryButton.xib */,
 			);
-			path = CommentButton;
+			path = AccessoryButton;
 			sourceTree = "<group>";
 		};
 		5BEF999F26093E39002F4E5D = {
@@ -227,6 +240,7 @@
 				5BEF99AB26093E39002F4E5D /* AppDelegate.swift */,
 				5BEF9A8E26096137002F4E5D /* Network */,
 				5BEF9A93260967A8002F4E5D /* Model */,
+				5BFCDCC0260BB9A200E376D3 /* Login */,
 				5BEF99C726094DE0002F4E5D /* Camera */,
 				5BEF9AAA260972E4002F4E5D /* List */,
 				5BEF9D90260A4B60002F4E5D /* Detail */,
@@ -261,7 +275,6 @@
 				5BEF9A94260967B1002F4E5D /* Gist.swift */,
 				5BEF9D8A260A4774002F4E5D /* User.swift */,
 				5BA56397260A9BC1003FE5B8 /* Comment.swift */,
-				5BA563A4260AB3DA003FE5B8 /* History.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -407,6 +420,59 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		5BFCDCC0260BB9A200E376D3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5BFCDCC5260BB9CC00E376D3 /* View */,
+				5BFCDCC4260BB9C500E376D3 /* Interactor */,
+				5BFCDCC3260BB9C000E376D3 /* Presenter */,
+				5BFCDCC2260BB9B400E376D3 /* Router */,
+				5BFCDCC1260BB9AE00E376D3 /* Contract */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		5BFCDCC1260BB9AE00E376D3 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				5BFCDCC6260BB9DB00E376D3 /* LoginContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		5BFCDCC2260BB9B400E376D3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5BFCDCD5260BBB1B00E376D3 /* LoginRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5BFCDCC3260BB9C000E376D3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5BFCDCD2260BBB1300E376D3 /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5BFCDCC4260BB9C500E376D3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5BFCDCCF260BBB0900E376D3 /* LoginInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5BFCDCC5260BB9CC00E376D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5BFCDCCA260BBA5B00E376D3 /* LoginViewController.swift */,
+				5BFCDCCB260BBA5B00E376D3 /* LoginViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -473,7 +539,8 @@
 				5BEF9AAE260972F8002F4E5D /* GistListViewController.xib in Resources */,
 				5BEF9DA5260A4BC3002F4E5D /* GistDetailViewController.xib in Resources */,
 				5BA563A9260AB825003FE5B8 /* LoadingView.xib in Resources */,
-				5BDE3C3A260B99B000248162 /* CommentButton.xib in Resources */,
+				5BFCDCCD260BBA5B00E376D3 /* LoginViewController.xib in Resources */,
+				5BDE3C3A260B99B000248162 /* AccessoryButton.xib in Resources */,
 				5BEF99B526093E40002F4E5D /* Assets.xcassets in Resources */,
 				5BA563A1260AA1A0003FE5B8 /* CommentTableViewCell.xib in Resources */,
 			);
@@ -491,16 +558,18 @@
 				5BA56391260A6838003FE5B8 /* DateExtension.swift in Sources */,
 				5BA56394260A9B70003FE5B8 /* DateFormatterExtension.swift in Sources */,
 				5BEF9AC026097774002F4E5D /* UIViewExtension.swift in Sources */,
-				5BDE3C39260B99B000248162 /* CommentButton.swift in Sources */,
+				5BDE3C39260B99B000248162 /* AccessoryButton.swift in Sources */,
 				5BDE3C40260B9A8200248162 /* LoadingButton.swift in Sources */,
 				5BA563BB260AC2F6003FE5B8 /* CommentContract.swift in Sources */,
+				5BFCDCD0260BBB0900E376D3 /* LoginInteractor.swift in Sources */,
 				5BEF9AC72609799C002F4E5D /* GistListPresenter.swift in Sources */,
 				5BEF9ACA260979A4002F4E5D /* GistListRouter.swift in Sources */,
+				5BFCDD8F260BCA1200E376D3 /* UIAcessoryTextField.swift in Sources */,
 				5BEF9A9026096142002F4E5D /* GistAPI.swift in Sources */,
 				5BA563B6260AC2EA003FE5B8 /* CommentViewController.swift in Sources */,
 				5BA563C4260AC313003FE5B8 /* CommentInteractor.swift in Sources */,
+				5BFCDCD6260BBB1B00E376D3 /* LoginRouter.swift in Sources */,
 				5BEF9ABD26097736002F4E5D /* UIRoundedButton.swift in Sources */,
-				5BA563A5260AB3DA003FE5B8 /* History.swift in Sources */,
 				5BEF9AAD260972F8002F4E5D /* GistListViewController.swift in Sources */,
 				5BA563AC260AB838003FE5B8 /* LoadingView.swift in Sources */,
 				5BEF9D9A260A4B99002F4E5D /* GistDetailRouter.swift in Sources */,
@@ -509,14 +578,17 @@
 				5BEF9A95260967B1002F4E5D /* Gist.swift in Sources */,
 				5BA563C1260AC30A003FE5B8 /* CommentPresenter.swift in Sources */,
 				5BEF9AA82609716A002F4E5D /* StringExtension.swift in Sources */,
+				5BFCDCC7260BB9DB00E376D3 /* LoginContract.swift in Sources */,
 				5BEF9AB826097552002F4E5D /* GistTableViewCell.swift in Sources */,
 				5BEF9D97260A4B91002F4E5D /* GistDetailContract.swift in Sources */,
 				5BEF9D9D260A4BA5002F4E5D /* GistDetailPresenter.swift in Sources */,
 				5BEF9A6D26094E13002F4E5D /* CameraViewController.swift in Sources */,
+				5BFCDCCC260BBA5B00E376D3 /* LoginViewController.swift in Sources */,
 				5BEF9DA0260A4BB0002F4E5D /* GistDetailInteractor.swift in Sources */,
 				5BA563A0260AA1A0003FE5B8 /* CommentTableViewCell.swift in Sources */,
 				5BEF9ACD260979B0002F4E5D /* GistListContract.swift in Sources */,
 				5BEF9D8B260A4774002F4E5D /* User.swift in Sources */,
+				5BFCDCD3260BBB1300E376D3 /* LoginPresenter.swift in Sources */,
 				5BEF9D8E260A496D002F4E5D /* UIImageViewExtension.swift in Sources */,
 				5BEF99AC26093E39002F4E5D /* AppDelegate.swift in Sources */,
 			);

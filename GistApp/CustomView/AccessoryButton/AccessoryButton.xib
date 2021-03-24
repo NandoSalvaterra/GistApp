@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -7,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommentButton" customModule="GistApp" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccessoryButton" customModule="GistApp" customModuleProvider="target">
             <connections>
                 <outlet property="button" destination="QDb-Le-TIv" id="gG0-AR-xGr"/>
                 <outlet property="contentView" destination="iN0-l3-epB" id="zut-d0-41f"/>
@@ -19,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDb-Le-TIv" userLabel="Comentar" customClass="LoadingButton" customModule="GistApp" customModuleProvider="target">
-                    <rect key="frame" x="16" y="16" width="503" height="167"/>
+                    <rect key="frame" x="16" y="60" width="503" height="89"/>
                     <color key="backgroundColor" name="AccentColor"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                     <state key="normal" title="Comentar">
@@ -47,6 +48,11 @@
             <point key="canvasLocation" x="-248.55072463768118" y="-67.299107142857139"/>
         </view>
     </objects>
+    <designables>
+        <designable name="QDb-Le-TIv">
+            <size key="intrinsicContentSize" width="78" height="33"/>
+        </designable>
+    </designables>
     <resources>
         <namedColor name="AccentColor">
             <color red="0.875" green="0.32499998807907104" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

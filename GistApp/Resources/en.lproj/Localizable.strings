@@ -6,6 +6,7 @@
 */
 
 // MARK: - General
+"login" = "Login";
 "gists" = "Gists";
 "comments" = "comments";
 "no_description" = "Gist with no description";

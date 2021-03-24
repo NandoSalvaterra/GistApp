@@ -37,8 +37,9 @@ class CommentViewController: UIViewController {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         descriptionLabel.text = "\("comment_on".localized)\(gist.owner?.name ?? "anonymous_gist".localized)"
         commentTextField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
-        commentTextField.inputAccessoryView = CommentButton(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 80), delegate: self)
+        commentTextField.inputAccessoryView = AccessoryButton(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 80), delegate: self)
         commentTextField.becomeFirstResponder()
+        (commentTextField.inputAccessoryView as? AccessoryButton)?.setTitle("comment".localized)
     }
 }
 
@@ -46,11 +47,11 @@ class CommentViewController: UIViewController {
 extension CommentViewController: CommentView {
     
     func showLoadingView() {
-        (commentTextField.inputAccessoryView as? CommentButton)?.showLoading()
+        (commentTextField.inputAccessoryView as? AccessoryButton)?.showLoading()
     }
     
     func hideLoadingView() {
-        (commentTextField.inputAccessoryView as? CommentButton)?.hideLoading()
+        (commentTextField.inputAccessoryView as? AccessoryButton)?.hideLoading()
     }
     
     func showComment(_ comment: Comment) {
@@ -72,18 +73,18 @@ extension CommentViewController: UITextFieldDelegate {
     
     @objc private func textFieldDidChange(_ textField: UITextField) {
         if textField.text?.isEmpty ?? true {
-            (commentTextField.inputAccessoryView as? CommentButton)?.disableCommentButton()
+            (commentTextField.inputAccessoryView as? AccessoryButton)?.disableCommentButton()
         } else {
-            (commentTextField.inputAccessoryView as? CommentButton)?.enableComentButton()
+            (commentTextField.inputAccessoryView as? AccessoryButton)?.enableComentButton()
         }
     }
 }
 
 
-//MARK: - CommentButtonViewDelegate
-extension CommentViewController: CommentButtonViewDelegate {
+//MARK: - AccessoryButtonViewDelegate
+extension CommentViewController: AccessoryButtonViewDelegate {
     
-    func commentButtonPressed() {
+    func acessoryButtonPressed() {
         presenter.comment(gistId: gist.id  ?? "", text: commentTextField.text ?? "")
     }
 }

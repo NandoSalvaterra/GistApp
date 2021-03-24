@@ -1,5 +1,5 @@
 //
-//  CommentButton.swift
+//  AccessoryButton.swift
 //  GistApp
 //
 //  Created by Luiz Fernando Salvaterra on 03/02/20.
@@ -7,15 +7,15 @@
 
 import UIKit
 
-class CommentButton: UIView {
+class AccessoryButton: UIView {
     
     @IBOutlet private var contentView: UIView!
-    @IBOutlet private weak var button: LoadingButton!
+    @IBOutlet private  weak var button: LoadingButton!
     
-    weak var delegate: CommentButtonViewDelegate?
+    weak var delegate: AccessoryButtonViewDelegate?
     private var isButtonEnable: Bool = true
-    
-    convenience init(frame: CGRect, delegate: CommentButtonViewDelegate) {
+
+    convenience init(frame: CGRect, delegate: AccessoryButtonViewDelegate) {
         self.init(frame: frame)
         self.delegate = delegate
     }
@@ -32,17 +32,20 @@ class CommentButton: UIView {
     
     @IBAction func nextButtonPressed(_ sender: UIButton) {
         if !isButtonEnable { return }
-        delegate?.commentButtonPressed()
+        delegate?.acessoryButtonPressed()
     }
     
     private func initialize() {
-        Bundle.main.loadNibNamed("CommentButton", owner: self, options: nil)
+        Bundle.main.loadNibNamed("AccessoryButton", owner: self, options: nil)
         addSubview(contentView)
         self.backgroundColor = .clear
         contentView.frame = self.bounds
         contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-        button.setTitle("comment".localized, for: .normal)
         disableCommentButton()
+    }
+
+    func setTitle(_ title: String) {
+        button.setTitle(title, for: .normal)
     }
     
     func disableCommentButton() {
@@ -56,15 +59,15 @@ class CommentButton: UIView {
     }
     
     func showLoading() {
-        button.loading(true, title: "comment".localized)
+        button.loading(true, title: button.titleLabel?.text ?? "")
     }
     
     func hideLoading() {
-        button.loading(false, title: "comment".localized)
+        button.loading(false, title:  button.titleLabel?.text ?? "")
     }
 }
 
-protocol CommentButtonViewDelegate: class {
+protocol AccessoryButtonViewDelegate: class {
     
-    func commentButtonPressed()
+    func acessoryButtonPressed()
 }

@@ -21,11 +21,8 @@ class Gist: Decodable {
     var commentsURL: String?
     var created: Date?
     var updated: Date?
-   // var files: [String: Any]?
-    //    var user: Any? // TODO: change here
-    var owner: User? // TODO: change here
-   // var forks: [String]?
-    var history: History? // TODO: change here
+    var owner: User?
+    var history: History?
     var isPublic: Bool?
     var isTruncated: Bool?
     var commentCount: Int?
@@ -43,9 +40,7 @@ class Gist: Decodable {
         case commentsURL = "comments_url"
         case created = "created_at"
         case updated = "updated_at"
-        //case files = "files"
         case owner = "owner"
-       // case forks = "forks"
         case history = "history"
         case isPublic = "public"
         case isTruncated = "truncated"
