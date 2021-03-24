@@ -66,7 +66,7 @@ class CameraViewController: UIViewController {
     }
 
     private func showErrorView() {
-        let errorViewController = UIAlertController(title: "Leitor de QRCode não suportado", message: "Seu dispositivo não suporta o leitor de QRCode. Por favor use um dispositivo com câmera.", preferredStyle: .alert)
+        let errorViewController = UIAlertController(title: "qrcode_reader_not_supported".localized, message: "device_not_supported".localized, preferredStyle: .alert)
         errorViewController.addAction(UIAlertAction(title: "OK", style: .default))
         present(errorViewController, animated: true)
         captureSession = nil

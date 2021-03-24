@@ -19,3 +19,9 @@
 "hour_abbreviation" = "hr";
 "minute_abbreviation" = "min";
 "camera_title" = "Scanei um QRCode Gist";
+"qrcode_reader_not_supported" = "Leitor de QRCode não suportado";
+"device_not_supported" = "Seu dispositivo não suporta o leitor de QRCode. Por favor use um dispositivo com câmera.";
+"details" = "Detalhes";
+"comment" = "Comentar";
+"comment_on" = "Comente no gist de ";
+"anonymous_gist" = "Usuário anônimo";

@@ -27,6 +27,10 @@ class GistDetailPresenter: GistDetailPresentation {
     func getComments(gistId: String) {
         interactor.fetchComments(gistId: gistId)
     }
+
+    func showCommentView(gist: Gist) {
+        router.openCommentView(gist: gist)
+    }
 }
 
 // MARK: - GistDetailInteractorOutput
@@ -38,8 +42,9 @@ extension GistDetailPresenter: GistDetailInteractorOutput {
     }
     
     func commentsDidLoad(_ comments: [Comment]) {
+        let orderedComment = comments.sorted { $0.created ?? Date() > $1.created ?? Date() }
         view?.hideLoadingView()
-        view?.showComments(comments)
+        view?.showComments(orderedComment)
     }
     
     func onErrorLoadingGist(message: String) {

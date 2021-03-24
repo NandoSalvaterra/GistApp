@@ -15,4 +15,10 @@ class GistDetailRouter: GistDetailWireframe {
         self.viewController = viewController
     }
 
+    func openCommentView(gist: Gist) {
+        let commentViewController = CommentViewController()
+        commentViewController.gist = gist
+        commentViewController.delegate = viewController
+        viewController?.present(commentViewController, animated: true, completion: nil)
+    }
 }

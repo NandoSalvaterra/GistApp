@@ -16,6 +16,10 @@ class CommentTableViewCell: UITableViewCell {
 
     override func prepareForReuse() {
         super.prepareForReuse()
+        userNameLabel.text = nil
+        userImageView.image = nil
+        commentTextLabel.text = nil
+        createdLabel.text = nil
     }
 
     func bind(comment: Comment) {
@@ -24,5 +28,4 @@ class CommentTableViewCell: UITableViewCell {
         commentTextLabel.text = comment.text
         createdLabel.text = comment.created?.readableText
     }
-
 }

@@ -27,6 +27,7 @@ protocol GistDetailPresentation: class {
 
     func getGistDetail(gistId: String)
     func getComments(gistId: String)
+    func showCommentView(gist: Gist)
 }
 
 protocol GistDetailInteractorInput: class {
@@ -48,4 +49,6 @@ protocol GistDetailInteractorOutput: class {
 protocol GistDetailWireframe: class {
 
     var viewController: GistDetailViewController? { get set }
+
+    func openCommentView(gist: Gist)
 }

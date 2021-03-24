@@ -19,3 +19,9 @@
 "hour_abbreviation" = "hr";
 "minute_abbreviation" = "min";
 "camera_title" = "Scan a Gist QRCode";
+"qrcode_reader_not_supported" = "QRCode reader not supported";
+"device_not_supported" = "Your device does not support QRCode reader, please use the camera instead.";
+"details" = "Details";
+"comment" = "Comment";
+"comment_on" = "Comment on";
+"anonymous_gist" = "Anonymous user";

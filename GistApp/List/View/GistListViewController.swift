@@ -41,6 +41,7 @@ class GistListViewController: UIViewController {
         title = "gists".localized
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         tableView.register(UINib(nibName: "GistTableViewCell", bundle: nil), forCellReuseIdentifier: "gistTableViewCell")
+        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 80, right: 0)
         tableView.tableFooterView = UIView()
         refreshControl = UIRefreshControl()
         refreshControl?.tintColor = #colorLiteral(red: 0.6039215686, green: 0.5843137255, blue: 0.6980392157, alpha: 1)

@@ -12,7 +12,7 @@ class GistAPI {
     static let shared = GistAPI()
 
     private var baseURL: String { return  Bundle.main.infoDictionary?["API URL"] as! String }
-    private var token = "74edab8306ea3749396dfd97a1f0979e4c83bf2c"
+    private var token = "20bb398cef5e6ce90101c335ac488a99c501e0bd"
 
     private init () { }
 
